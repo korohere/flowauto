@@ -44,25 +44,25 @@ export function Navigation() {
             <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("what-flow-is")}
-                className="text-slate-700 hover:text-[#0E6B78] transition-colors"
+                className="text-slate-700 hover:text-[#0E6B78] transition-all duration-300 ease-out hover:scale-105"
               >
                 What Flow Is
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-slate-700 hover:text-[#0E6B78] transition-colors"
+                className="text-slate-700 hover:text-[#0E6B78] transition-all duration-300 ease-out hover:scale-105"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("case-study")}
-                className="text-slate-700 hover:text-[#0E6B78] transition-colors"
+                className="text-slate-700 hover:text-[#0E6B78] transition-all duration-300 ease-out hover:scale-105"
               >
                 Case Study
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white px-4 py-2 rounded-lg transition-colors"
+                className="bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white px-4 py-2 rounded-lg transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-0.5"
               >
                 Contact Us
               </button>
@@ -99,25 +99,25 @@ export function Navigation() {
             <div className="px-4 py-6 space-y-4">
               <button
                 onClick={() => scrollToSection("what-flow-is")}
-                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] active:bg-[#0E6B78]/10 rounded-lg transition-all duration-300 ease-out"
               >
                 What Flow Is
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] active:bg-[#0E6B78]/10 rounded-lg transition-all duration-300 ease-out"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("case-study")}
-                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-[#0E6B78]/5 hover:text-[#0E6B78] active:bg-[#0E6B78]/10 rounded-lg transition-all duration-300 ease-out"
               >
                 Case Study
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-4 py-3 bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white rounded-lg transition-colors"
+                className="block w-full text-left px-4 py-3 bg-[#0E6B78] hover:bg-[#0E6B78]/90 active:bg-[#0E6B78]/80 text-white rounded-lg transition-all duration-300 ease-out"
               >
                 Contact Us
               </button>

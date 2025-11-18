@@ -183,9 +183,9 @@ export function Contact() {
                 />
               </div>
 
-              <Button type="submit" size="lg" className="w-full bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white">
+              <Button type="submit" size="lg" className="w-full bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white group">
                 Send Message
-                <Send className="ml-2 h-5 w-5" />
+                <Send className="ml-2 h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:rotate-[-10deg]" />
               </Button>
             </form>
           </div>
@@ -197,7 +197,7 @@ export function Contact() {
             <img src={flowLogo} alt="Flow Logo" className="h-8 w-auto" />
           </div>
           <p className="text-slate-600">
-            © 2025 Flow. Making business automation simple.
+            2025 Flow. Making business automation simple.
           </p>
         </div>
       </div>

@@ -23,21 +23,21 @@ export function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
         <div className="text-center">
           <h1 className="inline-block mb-8 px-4 sm:px-8 py-3 sm:py-4 border-2 border-white rounded-lg text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-            Automate the Old. Build the New.
+            Automate The Work That Slows You Down
           </h1>
   
           <h2 className="text-white/90 mb-8 max-w-3xl mx-auto px-4">
-            We help traditional and family-run businesses bring efficiency, accuracy, and speed through simple, tailor-made automation solutions.
+            Custom automation workflows that eliminate repetitive tasks and make your operations faster, cleaner, and more reliable.
           </h2>
           
           <div className="flex justify-center">
             <Button 
               onClick={scrollToWhatFlowIs}
               size="lg" 
-              className="bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white"
+              className="bg-[#0E6B78] hover:bg-[#0E6B78]/90 text-white group"
             >
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5" />
+              Automate My Business
+              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-out group-hover:translate-x-1" />
             </Button>
           </div>
         </div>

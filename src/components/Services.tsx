@@ -9,8 +9,8 @@ export function Services() {
     },
     {
       icon: CheckSquare,
-      title: "Simplifying approval or order management systems",
-      description: "Streamline workflows with automated approval chains and order tracking. Speed up processing times while maintaining complete oversight and control."
+      title: "Data & Workflows",
+      description: "Clean, transform, sync, and route data without human involvement."
     },
     {
       icon: BarChart3,
@@ -35,7 +35,7 @@ export function Services() {
             We Handle the Tasks That Slow You Down
           </p>
           <p className="text-slate-600 max-w-3xl mx-auto px-4">
-            We create hyper-personalised software solutions designed to remove friction from your daily operations.
+            Every business is full of repetitive tasks waiting to be automated. We help you identify them, map them, and build reliable systems that handle them for you - end to end.
           </p>
         </div>
 
@@ -45,10 +45,10 @@ export function Services() {
             return (
               <div 
                 key={index}
-                className="group bg-[#F6F6F6] p-8 rounded-2xl border border-slate-200 hover:border-[#0E6B78] hover:bg-[#0E6B78]/5 transition-all duration-300"
+                className="group bg-[#F6F6F6] p-8 rounded-2xl border border-slate-200 hover:border-[#0E6B78] hover:bg-[#0E6B78]/5 transition-all duration-300 ease-out hover:shadow-lg hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-100"
               >
-                <div className="w-14 h-14 bg-[#0E6B78] group-hover:bg-[#0E6B78]/90 rounded-xl flex items-center justify-center mb-6 mx-auto transition-colors">
-                  <Icon className="h-7 w-7 text-white" />
+                <div className="w-14 h-14 bg-[#0E6B78] group-hover:bg-[#0E6B78]/90 rounded-xl flex items-center justify-center mb-6 mx-auto transition-all duration-300 ease-out group-hover:shadow-lg group-hover:scale-110 group-active:scale-100">
+                  <Icon className="h-7 w-7 text-white transition-transform duration-300 ease-out group-hover:scale-110 group-active:scale-100" />
                 </div>
                 
                 <h3 className="text-slate-900 text-center">

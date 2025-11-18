@@ -39,10 +39,10 @@ export function WhatFlowIs() {
             return (
               <div 
                 key={index}
-                className="bg-white rounded-xl border border-slate-200 hover:border-[#0E6B78] hover:shadow-lg transition-all duration-300 p-6"
+                className="bg-white rounded-xl border border-slate-200 hover:border-[#0E6B78] hover:shadow-lg transition-all duration-300 ease-out hover:-translate-y-1 hover:scale-[1.01] active:translate-y-0 active:scale-100 p-6 group"
               >
-                <div className="w-12 h-12 bg-[#0E6B78]/10 rounded-lg flex items-center justify-center mb-4 mx-auto">
-                  <Icon className="h-6 w-6 text-[#0E6B78]" />
+                <div className="w-12 h-12 bg-[#0E6B78]/10 rounded-lg flex items-center justify-center mb-4 mx-auto transition-all duration-300 ease-out group-hover:bg-[#0E6B78]/20 group-hover:scale-110 group-active:scale-100">
+                  <Icon className="h-6 w-6 text-[#0E6B78] transition-transform duration-300 ease-out group-hover:scale-110 group-active:scale-100" />
                 </div>
                 <h3 className="text-slate-900 mb-2 text-center">
                   {feature.title}
