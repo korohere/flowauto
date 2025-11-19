@@ -1,4 +1,5 @@
 import { FileText, CheckSquare, BarChart3, Wrench } from "lucide-react";
+import { LogoPattern } from "./LogoPattern";
 
 export function Services() {
   const services = [
@@ -25,8 +26,12 @@ export function Services() {
   ];
 
   return (
-    <section id="services" className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" className="py-12 bg-white relative overflow-hidden">
+      {/* Subtle logo watermarks */}
+      <LogoPattern className="absolute top-20 right-0 w-48 h-48 rotate-6 hidden lg:block" opacity={0.02} />
+      <LogoPattern className="absolute bottom-10 left-0 w-56 h-56 -rotate-12 hidden lg:block" opacity={0.025} />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-4 py-2 bg-[#0E6B78]/10 border border-[#0E6B78]/30 rounded-full">
             <span className="text-[#0E6B78]">Services We Provide</span>

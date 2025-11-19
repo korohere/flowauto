@@ -5,6 +5,7 @@ import { Textarea } from "./ui/textarea";
 import { Label } from "./ui/label";
 import { Phone, Mail, MapPin, Send } from "lucide-react";
 import flowLogo from "figma:asset/20a2dcf9e6e18b6f8cbacdd3ecd0552fdfb8337f.png";
+import { LogoPattern } from "./LogoPattern";
 
 export function Contact() {
   const [formData, setFormData] = useState({
@@ -31,8 +32,12 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-12 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-12 bg-white relative overflow-hidden">
+      {/* Subtle logo watermarks */}
+      <LogoPattern className="absolute top-10 left-0 w-56 h-56 -rotate-6 hidden lg:block" opacity={0.015} />
+      <LogoPattern className="absolute bottom-20 right-0 w-64 h-64 rotate-12 hidden lg:block" opacity={0.02} />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 bg-[#0E6B78]/10 border border-[#0E6B78]/30 rounded-full">
             <span className="text-[#0E6B78]">Contact Us</span>
@@ -58,7 +63,12 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-white/90 mb-1">Mobile Number</div>
-                    <div>+91 98207 21673</div>
+                    <a 
+                      href="tel:+919820721673" 
+                      className="hover:text-white/80 transition-colors duration-300 ease-out underline decoration-white/40 hover:decoration-white/60"
+                    >
+                      +91 98207 21673
+                    </a>
                   </div>
                 </div>
 
@@ -68,7 +78,12 @@ export function Contact() {
                   </div>
                   <div>
                     <div className="text-white/90 mb-1">Email</div>
-                    <div>hello@flow-auto.in</div>
+                    <a 
+                      href="mailto:hello@flowauto.in" 
+                      className="hover:text-white/80 transition-colors duration-300 ease-out underline decoration-white/40 hover:decoration-white/60"
+                    >
+                      hello@flowauto.in
+                    </a>
                   </div>
                 </div>
               </div>
@@ -81,7 +96,7 @@ export function Contact() {
                   <div className="w-12 h-12 bg-[#0E6B78] text-white rounded-full flex items-center justify-center mx-auto mb-3">
                     1
                   </div>
-                  <div className="text-slate-900 mb-2">Free Consultation</div>
+                  <div className="text-slate-900 mb-2">Consultation Call</div>
                   <p className="text-slate-600">
                     We'll schedule a call to understand your business and current processes.
                   </p>
@@ -91,7 +106,7 @@ export function Contact() {
                   <div className="w-12 h-12 bg-[#0E6B78] text-white rounded-full flex items-center justify-center mx-auto mb-3">
                     2
                   </div>
-                  <div className="text-slate-900 mb-2">Custom Automation Plan</div>
+                  <div className="text-slate-900 mb-2">Automation Plan</div>
                   <p className="text-slate-600">
                     We'll create a tailored plan showing exactly what we can automate and time savings.
                   </p>
@@ -103,7 +118,7 @@ export function Contact() {
                   </div>
                   <div className="text-slate-900 mb-2">Implementation</div>
                   <p className="text-slate-600">
-                    We handle everything and train your team. You'll see results in weeks, not months.
+                    We handle the setup and make sure your team knows exactly how to use the automation.
                   </p>
                 </div>
               </div>
@@ -197,7 +212,7 @@ export function Contact() {
             <img src={flowLogo} alt="Flow Logo" className="h-8 w-auto" />
           </div>
           <p className="text-slate-600">
-            2025 Flow. Making business automation simple.
+            Flow Automations 2025. Making Business Automation Simple.
           </p>
         </div>
       </div>

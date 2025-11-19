@@ -1,4 +1,5 @@
 import { Zap, Clock, TrendingUp, Shield } from "lucide-react";
+import { FloatingLogoElements } from "./LogoPattern";
 
 export function WhatFlowIs() {
   const features = [
@@ -20,8 +21,11 @@ export function WhatFlowIs() {
   ];
 
   return (
-    <section id="what-flow-is" className="py-12 bg-[#F6F6F6]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="what-flow-is" className="py-12 bg-[#F6F6F6] relative overflow-hidden">
+      {/* Floating logo elements in background */}
+      <FloatingLogoElements />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-block mb-8 px-4 py-2 bg-[#0E6B78]/10 border border-[#0E6B78]/30 rounded-full">
             <span className="text-[#0E6B78]">What Flow Is</span>

@@ -1,6 +1,7 @@
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { Button } from "./ui/button";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { FloatingLogoElements } from "./LogoPattern";
 
 export function CaseStudy() {
   const results = [
@@ -10,8 +11,11 @@ export function CaseStudy() {
   ];
 
   return (
-    <section id="case-study" className="py-12 bg-[#F6F6F6]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="case-study" className="py-12 bg-[#F6F6F6] relative overflow-hidden">
+      {/* Floating logo elements in background */}
+      <FloatingLogoElements />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
           <div className="inline-block mb-4 px-4 py-2 bg-[#0E6B78]/10 border border-[#0E6B78]/30 rounded-full">
             <span className="text-[#0E6B78]">Case Study</span>

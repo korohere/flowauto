@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { LogoPattern } from "./LogoPattern";
 
 export function Hero() {
   const scrollToWhatFlowIs = () => {
@@ -17,6 +18,10 @@ export function Hero() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[#0E6B78]/95 to-[#0E6B78]/85"></div>
+        
+        {/* Subtle logo watermarks */}
+        <LogoPattern className="absolute top-10 right-10 w-32 h-32 rotate-12 hidden lg:block" opacity={0.08} />
+        <LogoPattern className="absolute bottom-20 left-10 w-40 h-40 -rotate-12 hidden lg:block" opacity={0.06} />
       </div>
 
       {/* Content */}
